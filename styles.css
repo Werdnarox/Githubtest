@@ -1,0 +1,103 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #272727, #4f4f4f); /* Background gradient */
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ffffff; /* White border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+header p {
+    margin: 0;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff; /* White text */
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6db6; /* Pink border */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Media Styles */
+.media-container {
+    margin-bottom: 40px;
+    border: 2px solid #ff6db6; /* Pink border */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Pink shadow */
+}
+
+.media-container h3 {
+    color: #ff6db6; /* Pink text */
+    font-size: 24px;
+    margin-top: 0;
+    border-bottom: 1px solid #ff6db6; /* Pink border */
+    padding-bottom: 10px;
+}
+
+/* Tickets Styles */
+#tickets {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
+    padding: 40px 20px;
+}
+
+#tickets h2 {
+    color: #ffffff; /* White text */
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffffff; /* White border */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skiddle-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6db6; /* Pink background */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.skiddle-button:hover {
+    background-color: #d64693; /* Darker pink background on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
