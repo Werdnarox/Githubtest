@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1a1a1a;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#media .media-container {
+    margin-bottom: 20px;
+}
+
+.skiddle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.skiddle-button:hover {
+    background-color: #e04d00;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1a1a1a;
+}
