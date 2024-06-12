@@ -9,26 +9,6 @@ body {
     color: white;
 }
 
-nav {
-    background-color: #333;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
 header {
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
     padding: 20px;
@@ -38,51 +18,86 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 48px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 header p {
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 section {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
+h2 {
+    color: #ffffff; /* White text */
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6db6; /* Pink border */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Media Styles */
 .media-container {
     margin-bottom: 40px;
+    border: 2px solid #ff6db6; /* Pink border */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Pink shadow */
 }
 
 .media-container h3 {
     color: #ff6db6; /* Pink text */
     font-size: 24px;
+    margin-top: 0;
+    border-bottom: 1px solid #ff6db6; /* Pink border */
+    padding-bottom: 10px;
 }
 
-.video-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%; /* Aspect ratio (16:9) */
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Tickets Styles */
-#tickets {
+/* Footer Styles */
+footer {
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
-    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-#tickets h2 {
-    color: #ffffff; /* White text */
-    font-size: 20px;
+/* Navbar Styles */
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navbar-brand {
+    color: #4f4f4f;
+}
+
+.navbar-scroll .nav-link:hover {
+    color: #1266f1;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars,
+.navbar-scrolled .navbar-brand {
+    color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

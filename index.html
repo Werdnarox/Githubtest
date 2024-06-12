@@ -4,51 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Underground Music Event</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="roster.html">Roster</a></li> <!-- Link to the roster page -->
-        </ul>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+      <div class="container">
+        <img src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png" height="70" alt="" loading="lazy" />
+        <button class="navbar-toggler ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="roster.html">Roster</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#tickets">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <header>
+    <header class="text-center mt-5 pt-5">
         <h1>Underground Music Event</h1>
         <p>Join us for an unforgettable night of music</p>
     </header>
 
-    <section id="about">
+    <section id="about" class="container mt-5">
         <h2>About the Event</h2>
         <p>Discover the best underground music from top DJs and artists.</p>
     </section>
 
-    <section id="media">
+    <section id="media" class="container mt-5">
         <h2>Watch and Listen</h2>
         
-        <div class="media-container">
-            <h3>YouTube</h3>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="media-container card mb-3">
+            <div class="card-body">
+                <h3 class="card-title">YouTube</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         
-        <div class="media-container">
-            <h3>SoundCloud</h3>
-            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
+        <div class="media-container card mb-3">
+            <div class="card-body">
+                <h3 class="card-title">SoundCloud</h3>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
+            </div>
         </div>
     </section>
 
-    <section id="tickets">
+    <section id="tickets" class="container mt-5">
         <h2>Get Your Tickets</h2>
-        <a href="https://www.skiddle.com/whats-on/YOUR_EVENT_ID" class="skiddle-button">Buy Tickets on Skiddle</a>
+        <a href="https://www.skiddle.com/whats-on/YOUR_EVENT_ID" class="btn btn-primary skiddle-button">Buy Tickets on Skiddle</a>
     </section>
 
-    <footer>
+    <footer class="text-center mt-5">
         <p>&copy; 2024 Underground Music Event. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
+

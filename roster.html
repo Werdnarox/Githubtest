@@ -1,79 +1,133 @@
-<!-- roster.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Underground Music Event - Roster</title>
+    <title>Gum Fella - Roster</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="roster.html">Roster</a></li> <!-- Link to the roster page -->
-        </ul>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+      <div class="container">
+        <img src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png" height="70" alt="" loading="lazy" />
+        <button class="navbar-toggler ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="roster.html">Roster</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#tickets">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <header>
-        <h1>Underground Music Event - Roster</h1>
+        <h1>Gum Fella - Roster</h1>
     </header>
 
     <section id="dj-roster">
-        <div class="dj-profile">
-            <div class="profile-info">
-                <img src="dj1.jpg" alt="DJ 1">
-                <h2>DJ 1</h2>
-                <p>Bio for DJ 1...</p>
-                <div class="social-links">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
+        <div class="dj-profile card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="dj1.jpg" class="img-fluid rounded-start" alt="DJ 1">
                 </div>
-            </div>
-            <div class="media-container">
-                <h3>YouTube</h3>
-                <iframe width="200" height="113" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="media-container">
-                <h3>SoundCloud</h3>
-                <iframe width="200" height="113" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
-            </div>
-            <div class="media-container">
-                <h3>Instagram</h3>
-                <!-- Replace 'YOUR_INSTAGRAM_URL' with the URL of the Instagram post -->
-                <blockquote class="instagram-media" data-instgrm-permalink="YOUR_INSTAGRAM_URL" data-instgrm-version="13"></blockquote>
-                <script async src="//www.instagram.com/embed.js"></script>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Gerdna</h5>
+                        <p class="card-text">Bio ..ADD TITLE BIO + RESIDENT TAG*.. Wickedest spinner in the west minds.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <a href="#" class="me-2"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-twitter-square"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-instagram-square"></i></a>
+                            </small>
+                        </p>
+                        <div class="media-container">
+                            <h6>YouTube</h6>
+                            <iframe width="200" height="113" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="media-container">
+                            <h6>SoundCloud</h6>
+                            <iframe width="200" height="113" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
+                        </div>
+                        <div class="media-container">
+                            <h6>Instagram</h6>
+                            <blockquote class="instagram-media" data-instgrm-permalink="YOUR_INSTAGRAM_URL" data-instgrm-version="13"></blockquote>
+                            <script async src="//www.instagram.com/embed.js"></script>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
+
         <!-- Repeat this block for each DJ profile -->
-        
-        <div class="dj-profile">
-            <div class="profile-info">
-                <img src="dj2.jpg" alt="DJ 2">
-                <h2>DJ 2</h2>
-                <p>Bio for DJ 2...</p>
-                <div class="social-links">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
+
+        <div class="dj-profile card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="dj2.jpg" class="img-fluid rounded-start" alt="DJ 2">
                 </div>
-            </div>
-            <div class="media-container">
-                <h3>YouTube</h3>
-                <iframe width="200" height="113" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="media-container">
-                <h3>SoundCloud</h3>
-                <iframe width="200" height="113" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
-            </div>
-            <div class="media-container">
-                <h3>Instagram</h3>
-                <!-- Replace 'YOUR_INSTAGRAM_URL' with the URL of the Instagram post -->
-                <blockquote class="instagram-media" data-instgrm-permalink="YOUR_INSTAGRAM_URL" data-instgrm-version="13"></blockquote>
-                <script async src="//www.instagram.com/embed.js"></script>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Kinny</h5>
+                        <p class="card-text">Bio Original Gum Fella donny shells the dance, with regular shows on Mode FM...</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <a href="#" class="me-2"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-twitter-square"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-instagram-square"></i></a>
+                            </small>
+                        </p>
+                        <div class="media-container">
+                            <h6>YouTube</h6>
+                            <iframe width="200" height="113" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="media-container">
+                            <h6>SoundCloud</h6>
+                            <iframe width="200" height="113" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
+                        </div>
+                        <div class="media-container">
+                            <h6>Instagram</h6>
+                            <blockquote class="instagram-media" data-instgrm-permalink="YOUR_INSTAGRAM_URL" data-instgrm-version="13"></blockquote>
+                            <script async src="//www.instagram.com/embed.js"></script>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -82,6 +136,9 @@
         <p>&copy; 2024 Underground Music Event. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
