@@ -4,149 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Underground Music Event - Roster</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Gum Fella - Roster</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">CraftY</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="roster.html">Roster</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#media">Watch and Listen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#tickets">Tickets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav d-flex flex-row">
-                        <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="#!">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="#!">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="#!">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="roster.html">Roster</a></li> <!-- Link to the roster page -->
+        </ul>
+    </nav>
 
-        <!--Section: Design Block-->
-        <section>
-            <div id="intro" class="bg-image" style="
-                background-image: url('https://mdbootstrap.com/img/Photos/new-templates/craftsman/img(1).jpg');
-                height: 100vh;
-              ">
-                <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
-                    <div class="container d-flex justify-content-center align-items-center h-100">
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <h1 class="mb-0 text-white display-1">Studio</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Section: Design Block-->
+    <header>
+        <h1>Gum Fella - Roster</h1>
     </header>
 
-    <main>
-        <div class="container my-5 py-5">
-            <section id="roster">
-                <h2>Event Roster</h2>
-
-                <!-- DJ Profiles -->
-                <div class="dj-profile row">
-                    <div class="col-md-8 profile-info">
-                        <img src="dj1.jpg" alt="DJ 1" class="img-fluid">
-                        <h2>DJ Name</h2>
-                        <p>Bio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat justo vitae
-                            efficitur dignissim...</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
-                            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media-container">
-                            <h3>YouTube</h3>
-                            <iframe width="200" height="113" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="media-container">
-                            <h3>SoundCloud</h3>
-                            <iframe width="200" height="113" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
-                        </div>
-                        <div class="media-container">
-                            <h3>Instagram</h3>
-                            <!-- Replace 'YOUR_INSTAGRAM_URL' with the URL of the Instagram post -->
-                            <blockquote class="instagram-media" data-instgrm-permalink="YOUR_INSTAGRAM_URL" data-instgrm-version="13"></blockquote>
-                            <script async src="//www.instagram.com/embed.js"></script>
-                        </div>
-                    </div>
+    <section id="dj-roster">
+        <div class="dj-profile">
+            <div class="profile-info">
+                <img src="dj1.jpg" alt="DJ 1">
+                <h2>Gerdna</h2>
+                <p>Bio ..ADD TITLE BIO + RESIDENT TAG*.. Wickedest spinner in the west minds .</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
                 </div>
-
-                <!-- Repeat this block for each DJ profile -->
-                
-                <div class="dj-profile row">
-                    <div class="col-md-8 profile-info">
-                        <img src="dj2.jpg" alt="DJ 2" class="img-fluid">
-                        <h2>Kinny</h2>
-                        <p>Bio Original Gum Fella donny shells the dance, with regular shows on Mode FM...</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
-                            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media-container">
-                            <h3>YouTube</h3>
-                            <iframe width="200" height="113" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="media-container">
-                            <h3>SoundCloud</h3>
-                            <iframe width="200" height="113" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud
-
+            </div>
+            <div class="media-container">
+                <h3>YouTube</h3>
+                <iframe width="200" height="113" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="media-container">
+                <h3>SoundCloud</h3>
+                <iframe width="200" height="113" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
+            </div>
+            <div class="media-container">
+                <h3>Instagram</h3>
+                <!-- Replace 'YOUR_INSTAGRAM_URL' with the URL of the Instagram post -->
+                <blockquote class="instagram-media" data-instgrm-permalink="YOUR_INSTAGRAM_URL" data-instgrm-version="13"></blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+        
+        <!-- Repeat this block for each DJ profile -->
+        
+        <div class="dj-profile">
+            <div class="profile-info">
+                <img src="dj2.jpg" alt="DJ 2">
+                <h2>Kinny</h2>
+                <p>Bio Original Gum Fella donny shells the dance, with regular shows on Mode FM...</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</

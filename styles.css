@@ -2,71 +2,87 @@
 
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #272727, #4f4f4f); /* Background gradient */
-    color: white;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 header {
+    background-color: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #ffffff; /* White border */
 }
 
 header h1 {
     margin: 0;
-    font-size: 48px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    font-size: 36px;
 }
 
 header p {
-    margin: 0;
-    font-size: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    margin-top: 0;
 }
 
 section {
-    padding: 40px 20px;
-    text-align: center;
+    padding: 20px;
 }
 
 h2 {
-    color: #ffffff; /* White text */
-    font-size: 30px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ff6db6; /* Pink border */
-    display: inline-block;
-    padding-bottom: 5px;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
 /* Media Styles */
 .media-container {
-    margin-bottom: 40px;
-    border: 2px solid #ff6db6; /* Pink border */
+    margin-bottom: 20px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Pink shadow */
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 
 .media-container h3 {
-    color: #ff6db6; /* Pink text */
-    font-size: 24px;
+    color: #333;
+    font-size: 18px;
     margin-top: 0;
-    border-bottom: 1px solid #ff6db6; /* Pink border */
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
 }
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 ratio */
-    padding-top: 25px;
+    padding-bottom: 56.25%;
     height: 0;
 }
 
@@ -80,114 +96,45 @@ p {
 
 /* Tickets Styles */
 #tickets {
-    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
-    padding: 40px 20px;
-}
-
-#tickets h2 {
-    color: #ffffff; /* White text */
-    font-size: 30px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ffffff; /* White border */
-    display: inline-block;
-    padding-bottom: 5px;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
 .skiddle-button {
     display: inline-block;
-    padding: 15px 30px;
-    background-color: #ff6db6; /* Pink background */
-    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .skiddle-button:hover {
-    background-color: #d64693; /* Darker pink background on hover */
+    background-color: #555;
 }
 
 /* Footer Styles */
 footer {
-    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
-    color: #ffffff; /* White text */
-    text-align: center;
+    background-color: #333;
+    color: #fff;
     padding: 20px;
-    margin-top: 40px;
-    border-top: 2px solid #ff6db6; /* Pink border */
+    text-align: center;
 }
 
 /* Navbar Styles */
-@media (max-width: 991px) {
-    .navbar-scroll {
-        background-color: #fff;
-    }
-
-    .navbar-scroll .navbar-brand,
-    .navbar-scroll .nav-link,
-    .navbar-scroll .fa-bars {
-        color: #4f4f4f !important;
-    }
+nav ul li a:hover {
+    color: #ff6db6;
 }
 
-.navbar-brand {
-    letter-spacing: 3px;
-    font-size: 2rem;
-    font-weight: 500;
+nav ul li.active a {
+    color: #ff6db6;
 }
 
-.navbar-scroll .navbar-brand,
-.navbar-scroll .nav-link,
-.navbar-scroll .fa-bars {
-    color: #fff;
+nav ul li a:focus {
+    color: #ff6db6;
 }
 
-.navbar-scroll {
-    box-shadow: none;
-}
-
-.navbar-scrolled {
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
-}
-
-.navbar-scrolled .navbar-brand,
-.navbar-scrolled .nav-link,
-.navbar-scrolled .fa-bars {
-    color: #4f4f4f;
-}
-
-.navbar-scrolled {
-    background-color: #fff;
-}
-
-@media (max-width: 450px) {
-    #intro {
-        height: 950px !important;
-    }
-}
-
-@media (min-width: 550px) and (max-width: 750px) {
-    #intro {
-        height: 1100px !important;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 990px) {
-    #intro {
-        height: 600px !important;
-    }
-}
-
-.display-1 {
-    font-weight: 500 !important;
-    letter-spacing: 40px;
-}
-
-@media (min-width: 1600px) {
-    .display-1 {
-        font-size: 10rem;
-    }
-}
 
 
