@@ -10,7 +10,6 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #ffffff; /* White border */
@@ -112,93 +111,83 @@ p {
 /* Footer Styles */
 footer {
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
-    color: white;
+    color: #ffffff; /* White text */
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #ff6db6; /* Pink border */
 }
 
 /* Navbar Styles */
-.navbar-scroll .nav-link,
-.navbar-scroll .fa-bars,
-.navbar-scroll .navar-brand {
-  color: #4f4f4f;
-}
+@media (max-width: 991px) {
+    .navbar-scroll {
+        background-color: #fff;
+    }
 
-.navbar-scroll .nav-link:hover {
-  color: #1266f1;
-}
-
-.navbar-scrolled .nav-link,
-.navbar-scrolled .fa-bars,
-.navbar-scrolled .navar-brand {
-  color: #4f4f4f;
-}
-
-.navbar-scroll,
-.navbar-scrolled {
-  background-color: #fff;
-}
-
-.navbar.navbar-scroll.navbar-scrolled {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-/* DJ Profile Styles */
-.dj-profile {
-    border: 2px solid #ff6db6; /* Pink border */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
-    margin-bottom: 40px;
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Pink shadow */
-    text-align: left;
-}
-
-.dj-profile img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.dj-profile h2 {
-    color: #ff6db6; /* Pink text */
-    font-size: 24px;
-    margin-top: 0;
-    border-bottom: 1px solid #ff6db6; /* Pink border */
-    padding-bottom: 10px;
-}
-
-.dj-profile p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.social-links a {
-    display: inline-block;
-    color: #ff6db6; /* Pink text */
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.social-links a:hover {
-    color: #d64693; /* Darker pink */
-}
-
-/* Media container styles for DJ profile */
-.dj-profile .media-container {
-    display: inline-block;
-    width: 100%;
-    max-width: 200px;
-    margin-left: 20px;
-    vertical-align: top;
-}
-
-@media (max-width: 768px) {
-    .dj-profile .media-container {
-        margin-left: 0;
-        margin-top: 20px;
-        width: 100%;
+    .navbar-scroll .navbar-brand,
+    .navbar-scroll .nav-link,
+    .navbar-scroll .fa-bars {
+        color: #4f4f4f !important;
     }
 }
+
+.navbar-brand {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.navbar-scroll .navbar-brand,
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+    color: #fff;
+}
+
+.navbar-scroll {
+    box-shadow: none;
+}
+
+.navbar-scrolled {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+    color: #4f4f4f;
+}
+
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+@media (max-width: 450px) {
+    #intro {
+        height: 950px !important;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+    #intro {
+        height: 1100px !important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+    #intro {
+        height: 600px !important;
+    }
+}
+
+.display-1 {
+    font-weight: 500 !important;
+    letter-spacing: 40px;
+}
+
+@media (min-width: 1600px) {
+    .display-1 {
+        font-size: 10rem;
+    }
+}
+
 
