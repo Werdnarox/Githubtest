@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -240,4 +238,6 @@ nav ul:has(> li.active) {
     color: #333;
     text-decoration: none;
     font-size: 14px;
+}
+
 }
