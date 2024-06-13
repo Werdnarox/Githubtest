@@ -136,5 +136,62 @@ nav ul li a:focus {
     color: #ff6db6;
 }
 
+/* New 2024 CSS Features */
 
+/* CSS Container Queries */
+@container (min-width: 400px) {
+    .media-container {
+        border: 2px solid #333;
+    }
+}
 
+/* CSS Nesting */
+header {
+    color: white;
+    & h1 {
+        font-size: 48px;
+    }
+    & p {
+        font-size: 20px;
+    }
+}
+
+/* CSS Subgrid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item {
+    display: subgrid;
+}
+
+/* Color Functions */
+.skiddle-button {
+    background-color: color-mix(in srgb, blue 50%, white);
+    color: color-contrast(black vs white);
+}
+
+/* CSS :has() Pseudo-Class */
+nav ul:has(> li.active) {
+    background-color: #444;
+}
+
+/* CSS Container Units */
+.container {
+    width: 50cqw;
+    height: 50cqh;
+}
+
+/* CSS Masonry Layout */
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-flow: dense;
+}
+
+/* Enhanced Logical Properties */
+.footer {
+    margin-inline-start: 10px;
+    padding-block-end: 20px;
+}
