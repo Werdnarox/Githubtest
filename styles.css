@@ -96,6 +96,17 @@ p {
     height: 100%;
 }
 
+/* Instagram Embed Container */
+.instagram-container {
+    margin-top: 20px; /* Adjust as needed */
+    width: 100%;
+}
+
+.instagram-container .instagram-media {
+    margin: 0 auto !important; /* Center the Instagram embed */
+    max-width: 100% !important; /* Ensure it stays within its container */
+}
+
 /* Social Links */
 .social-links {
     display: flex;
@@ -173,6 +184,7 @@ nav ul li a:focus {
     text-decoration: none;
     font-size: 14px;
 }
+
 
 
 
