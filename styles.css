@@ -160,6 +160,7 @@ header {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .grid-item {
@@ -194,4 +195,47 @@ nav ul:has(> li.active) {
 .footer {
     margin-inline-start: 10px;
     padding-block-end: 20px;
+}
+
+/* Responsive DJ Profile Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.dj-profile {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.profile-info img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
 }
