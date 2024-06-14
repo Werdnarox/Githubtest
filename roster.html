@@ -4,8 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gum Fella - Roster</title>
+    <title>Sum Cellar - Roster</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'MortalKombat';
+            src: url('MortalKombat.ttf') format('truetype'); /* Add the path to your Mortal Kombat font */
+        }
+
+        #fighter-selection {
+            text-align: center;
+            font-family: 'MortalKombat', sans-serif;
+            font-size: 2em;
+            color: red;
+            margin: 20px 0;
+        }
+
+        .atoz-container a {
+            position: relative;
+            display: inline-block;
+        }
+
+        .atoz-container a:hover::after {
+            content: attr(data-dj-name);
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,15 +53,18 @@
         <h1>Sum Cellar - Roster</h1>
     </header>
 
+    <!-- Select Your Fighter Box -->
+    <div id="fighter-selection">Selecta Your Fighter</div>
+
     <!-- A to Z Menu -->
     <section id="atoz-menu">
         <div class="atoz-container">
-            <a href="#dj_bakes"><img src="dj_bakes.jpg" alt="DJ Bakes"></a>
-            <a href="#dj_jas"><img src="dj_jas.jpg" alt="DJ Jas"></a>
-            <a href="#dj_just_jay"><img src="dj_just_jay.jpg" alt="DJ Just Jay"></a>
-            <a href="#dj_kinny"><img src="dj_kinny.jpg" alt="DJ Kinny"></a>
-            <a href="#dj_malado"><img src="dj_malado.jpg" alt="DJ Malado"></a>
-            <a href="#dj_werdna"><img src="dj_werdna.jpg" alt="DJ Werdna"></a>
+            <a href="#dj_bakes" data-dj-name="DJ Bakes"><img src="dj_bakes.jpg" alt="DJ Bakes"></a>
+            <a href="#dj_jas" data-dj-name="DJ Jas"><img src="dj_jas.jpg" alt="DJ Jas"></a>
+            <a href="#dj_just_jay" data-dj-name="DJ Just Jay"><img src="dj_just_jay.jpg" alt="DJ Just Jay"></a>
+            <a href="#dj_kinny" data-dj-name="DJ Kinny"><img src="dj_kinny.jpg" alt="DJ Kinny"></a>
+            <a href="#dj_malado" data-dj-name="DJ Malado"><img src="dj_malado.jpg" alt="DJ Malado"></a>
+            <a href="#dj_werdna" data-dj-name="DJ Werdna"><img src="dj_werdna.jpg" alt="DJ Werdna"></a>
         </div>
     </section>
 
@@ -177,4 +213,5 @@
 </body>
 
 </html>
+
 

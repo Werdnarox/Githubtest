@@ -183,12 +183,19 @@ nav ul li a:focus {
 .atoz-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+.atoz-container a {
+    display: inline-block;
+    width: calc(25% - 20px); /* Four icons per row, accounting for gap */
+    text-align: center;
 }
 
 .atoz-container a img {
-    width: 50px;
-    height: 50px;
+    width: 70px; /* Slightly larger icons */
+    height: 70px; /* Slightly larger icons */
     border-radius: 50%;
     transition: transform 0.3s, box-shadow 0.3s;
 }
